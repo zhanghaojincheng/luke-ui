@@ -1,0 +1,11 @@
+@keyframes animation-btn {
+    0%{
+        opacity:0;
+    }
+    66%{ /*这里表示3s的66%也就是大约2秒的时候*/
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

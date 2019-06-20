@@ -1,0 +1,28 @@
+@import './../../theme/global.scss';
+
+.home-page-wrapper {
+    min-height: $Vh;
+    background: $backColor;
+    display: flex;
+    .sider {
+        width: 22%;
+        background: $themeColor;
+        .menu-item {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #FF8C69;
+            font-weight: 800;
+            &:hover {
+                background:  #FF8C69;
+                color: $themeColor;
+            }
+        }
+    }
+    .content {
+        background: $backColor;
+        flex: 1;
+        border: 10px solid rgb(133, 96, 96);
+        padding: 100px;
+    }
+}

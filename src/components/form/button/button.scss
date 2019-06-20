@@ -1,0 +1,90 @@
+// $smallButtonSize:
+.button-component {
+  display: block;
+  margin-bottom: 20px;
+
+  min-width: 70px;
+  height: 30px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 15px;
+  border-width: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+  user-select: none;
+
+  &:hover {
+    transition: .4s;
+  }
+
+  /** 各种type */
+  &.primary, &.success, &.danger {
+    color: #fff;
+  }
+  &.primary {
+    background: #007bff;
+    &:hover {
+      background: #3d8de4;
+    }
+    &:active {
+      background: #1a6cc4;
+    }
+  }
+  &.success {
+    background: #4cd964;
+    &:hover {
+      background: #7fe690;
+    }
+    &:active {
+      background: #1fc73b;
+    }
+  }
+  &.danger {
+    background: #dd524d;
+    &:hover {
+      background: #db6c69;
+    }
+    &:active {
+      background: #d43f39;
+    }
+  }
+
+  /** 各种尺寸 */
+  &.big {
+    height: 40px;
+    min-width: 90px;
+  }
+  &.small {
+    height: 24px;
+    padding: 0 10px;
+    min-width: 48px;
+  }
+
+  /** disabled */
+  &.disabled {
+    &:hover, &:active {
+      background: #e4e5e6;
+    }
+    &.primary {
+      background: #4a88ca;
+      &:hover, &:active {
+        background: #4a88ca;
+      }
+    }
+    &.success {
+      background: #90d19b;
+      &:hover, &:active {
+        background: #90d19b;
+      }
+    }
+    &.danger {
+      background: #c46c69;
+      &:hover, &:active {
+        background: #c46c69;
+      }
+    }
+  }
+}
