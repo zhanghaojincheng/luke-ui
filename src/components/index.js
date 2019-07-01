@@ -1,1 +1,1 @@
-export { default as Button } from './form/button/index.jsx';
+export { default as Button } from './form/button/button.jsx';
