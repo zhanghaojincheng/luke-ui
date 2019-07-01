@@ -10,10 +10,10 @@ class HomeContainer extends React.Component {
                     <div className="menu-item"></div>
                 </div>
                 <div className="content">
-                    <Button className="small" disabled size="small" type="primary">按钮</Button>
-                    <Button disabled={true} type="success" onClick={this.btnClick}>中按钮</Button>
-                    <Button type="danger" size="big">大按钮</Button>
-                    <Button>大按钮</Button>
+                    <Button className="small" disabled size="small" type="primary" icon="icon-add">按钮</Button>
+                    <Button disabled={true} type="success" onClick={this.btnClick} icon="icon-add">添加</Button>
+                    <Button type="danger" size="big" icon="icon-add">大按钮</Button>
+                    <Button icon="icon-del">删除</Button>
                 </div>
             </div>
         )

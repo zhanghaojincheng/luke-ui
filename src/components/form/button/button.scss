@@ -16,6 +16,10 @@
   outline: 0;
   user-select: none;
 
+  &.iconfont .btn-text {
+    margin-left: 8px;
+  }
+
   &:hover {
     transition: .4s;
   }

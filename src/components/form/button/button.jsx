@@ -9,6 +9,7 @@ class Button extends React.Component {
     className: PropTypes.string,
     children: PropTypes.string.isRequired,
     onClick: PropTypes.func,
+    icon: PropTypes.string
   };
 
   static defaultProps = {
@@ -16,18 +17,19 @@ class Button extends React.Component {
   };
 
   render() {
-    let { children, className, type, size, disabled } = this.props;
+    let { children, className, type, size, disabled, icon } = this.props;
     if (!children) {
       throw new Error(
         `For Button Component, The prop 'children' is undefined!`
       );
     }
     disabled && (className += ' disabled');
-    let classname = classnames('button-component', className, type, size);
+    icon && (icon = 'iconfont ' + icon);
+    let classname = classnames('button-component', className, type, size, icon);
     
     return (
       <button {...this.props} className={classname}>
-        <span>{children}</span>
+        <span className="btn-text">{children}</span>
       </button>
     );
   }
