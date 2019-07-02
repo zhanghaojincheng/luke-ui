@@ -1,0 +1,23 @@
+.button-dropdown-component {
+    display: inline-block;
+    cursor: pointer;
+    .btn-dropdown {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border: 1px solid #ddd;
+        vertical-align: top;
+    }
+    .dropdown-icon {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 5px;
+        border-radius: 4px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
