@@ -3,22 +3,33 @@ import "./home.scss";
 import { Button, ButtonDropdown } from "../../components";
 
 class HomeContainer extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            options: [{
-                label: '001',
-                value: 1
-            },{
-                label: '002',
-                value: 2
-            },{
-                label: '003',
-                value: 3
-            }]
+  constructor(props) {
+    super(props);
+    this.state = {
+      options: [
+        {
+          name: "张浩张浩张",
+          value: '1'
+        },
+        {
+          name: "里斯",
+          value: '2'
+        },
+        {
+          name: "luke",
+          value: '3'
         }
-    }
+      ]
+    };
+  }
+  selectedValue = "";
+
+  onSelect = selectedValue => {
+    this.setState({
+      selectedValue
+    });
+    console.log(selectedValue);
+  };
 
   render() {
     return (
@@ -54,14 +65,16 @@ class HomeContainer extends React.Component {
             </Button>
           </div>
 
-
           <div>
-            <ButtonDropdown options={this.state.options}>
-                下拉列表
-            </ButtonDropdown>
+            <ButtonDropdown
+              options={this.state.options}
+              onSelect={this.onSelect}
+              selectedValue={this.state.selectedValue}
+              haveNullValue
+              labelField="name"
+              valueField="value"
+            />
           </div>
-
-          
         </div>
       </div>
     );

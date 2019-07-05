@@ -1,5 +1,39 @@
-.dropdown-component {
-    ul {
+@import "../../../theme/global.scss";
 
+.dropdown-component {
+  // border: 1px solid $borderColor;
+  border-top: 0;
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-transition: height .3s;
+  border-left: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
+  &.show-dropdown {
+    padding: 0;
+    border: 0;
+  }
+  ul {
+    font-size: 13px;
+    height: 100%;
+    li {
+      list-style: none;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 8px;
+      &.selected {
+        font-weight: 600;
+      }
+      &:first-child {
+        margin-top: 5px;
+      }
+      &:last-child {
+        margin-bottom: 5px;
+      }
+      &:hover {
+          background: #FFFFE0;
+      }
     }
+  }
 }

@@ -1,15 +1,63 @@
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* 字体大小 */
+$fontSize: 12px;
+$fontSizeLarge: 16px;
+
 /* 颜色 */
 
 // 字体颜色
 $color: #262626;
 // 背景色 浅-深
-$backColor: #F0F0F0;
-$backColor-1: #EBEBEB;
-$backColor-2: #E8E8E8;
-$backColor-3: #D3D3D3;
-$backColor-4: #C7C7C7;
+$backColor: #f0f0f0;
+$backColor-1: #ebebeb;
+$backColor-2: #e8e8e8;
+$backColor-3: #d3d3d3;
+$backColor-4: #c7c7c7;
 
-$themeColor: #FFEC8B;
+$borderColor: #ddd;
+$themeColor: #ffec8b;
 
 /* 高度 */
 $Vh: 100vh;
+
+/* 阴影 */
+$shadow: 0px 0px 15px #e4e0e0;
+
+
+
+
+
+
+
+
+/* 修改默认样式*/
+html {
+  font-size: 20px;
+}
+body {
+  font-size: $fontSize;
+}
+// body {
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+//     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+//     sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
